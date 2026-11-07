@@ -75,3 +75,14 @@ def extra_checks(nets, ctx):
 # parallel duplicates and DNP parts are dropped; 0R links merge their two nets
 DROP |= {"C6", "C10", "R5", "R6", "R32", "R45"}
 SHORTED = {"R38", "R39", "R40", "R41", "R42", "R43"}
+
+# --- OPA197 SOIC-8 -> SOT-23-5 --------------------------------------------
+OPAMP_PINS = {"6": "1", "4": "2", "3": "3", "2": "4", "7": "5"}
+OPAMPS = {"U9", "U10", "U11", "U12"}
+_translate_base = translate
+
+
+def translate(ref, pin, ctx, side):  # noqa: F811
+    if ref in OPAMPS and side == "orig":
+        return (ref, OPAMP_PINS[pin]) if pin in OPAMP_PINS else None
+    return _translate_base(ref, pin, ctx, side)

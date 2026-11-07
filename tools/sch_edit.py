@@ -295,11 +295,12 @@ class PartAdder:
         loc[0] = "label"
         loc[:] = [c for c in loc if not (isinstance(c, list) and c and c[0] in ("shape", "property", "fields_autoplaced"))]
         self.llabel = loc
+        # any power symbol already on the sheet can be reused, keyed by its net (Value)
         self.power = {}
         for s in sheet.symbols():
-            for net, lid in POWER_NETS.items():
-                if value(s, "lib_id") == lid:
-                    self.power.setdefault(net, s)
+            if sheet.is_power(s):
+                val = [p[2] for p in find(s, "property") if p[1] == "Value"][0]
+                self.power.setdefault(val, s)
         self.pwr_no = 950
 
     def add(self, lib_id, ref, val, footprint, at, nets, rot=0, props=None):
@@ -352,7 +353,7 @@ class PartAdder:
             out = pin_outward(p["rot"] + rot)
             end = (round(tip[0] + out[0] * GRID, 3), round(tip[1] + out[1] * GRID, 3))
             self.sh.add_wire(tip, end)
-            if net in POWER_NETS:
+            if net in self.power:
                 self.pwr_no += 1
                 rot_tbl = GND_ROT if net == "GND" else VCC_ROT
                 self.sh.add_power(self.power[net], end, rot_tbl[out], f"#PWR0{self.pwr_no}")
@@ -361,3 +362,57 @@ class PartAdder:
             else:
                 self.sh.add_label(self.llabel, net, end, label_angle(out))
         return node
+
+
+def flatten_symbol(lib_root, name, new_name):
+    """Resolve `extends` so the symbol can live in a schematic's lib_symbols cache."""
+    syms = {s[1]: s for s in find(lib_root, "symbol")}
+    sym = syms[name]
+    ext = first(sym, "extends")
+    if ext is None:
+        out = copy.deepcopy(sym)
+        out[1] = Q(new_name)
+        for sub in find(out, "symbol"):
+            sub[1] = Q(sub[1].replace(name, new_name.split(":")[-1], 1))
+        return out
+    base = flatten_symbol(lib_root, ext[1], new_name)
+    derived_props = {p[1]: p for p in find(sym, "property")}
+    base[:] = [c for c in base if not (isinstance(c, list) and c and c[0] == "property" and c[1] in derived_props)]
+    insert_at = next(i for i, c in enumerate(base) if isinstance(c, list) and c and c[0] == "symbol")
+    for p in derived_props.values():
+        base.insert(insert_at, copy.deepcopy(p))
+        insert_at += 1
+    return base
+
+
+def replace_part(sh, adder, ref, new_lib_id, pin_map, old_nets, footprint, val, props=None, label_for=None):
+    """Swap one symbol for another, carrying nets across with `pin_map` (old pin -> new pin).
+
+    old_nets: old pin number -> net name (from the netlist). Anonymous nets get a
+    readable local label on the far side of the cut wire, named by label_for(old_pin).
+    """
+    old = sh.by_ref(ref)
+    at = first(old, "at")
+    pos = (float(at[1]), float(at[2]))
+    tips = pin_tip(old, sh.libs[value(old, "lib_id")])
+    names = {}
+    for num, pts in tips.items():
+        net = old_nets.get(num)
+        name = net
+        if net and net.startswith("Net-("):
+            name = label_for(num)
+        names[num] = name
+        for p in pts:
+            for a, b, w in sh.wires():
+                if p in (a, b):
+                    far = b if p == a else a
+                    sh.remove(w)
+                    if net and net.startswith("Net-("):
+                        sh.add_label(adder.llabel, name, far, 0)
+    sh.remove(old)
+    sh.cleanup()
+    new_nets = {}
+    for old_pin, new_pin in pin_map.items():
+        n = names.get(old_pin)
+        new_nets[new_pin] = None if (not n or n.startswith("unconnected")) else n
+    return adder.add(new_lib_id, ref, val, footprint, pos, new_nets, props=props)
