@@ -2141,24 +2141,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 -10.16 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B1T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 17.78 2.54 180)
 					(length 5.08)
 					(name "TX2+"
@@ -2169,24 +2151,6 @@
 						)
 					)
 					(number "B2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 2.54 180)
-					(length 5.08)
-					(name "TX2+"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B2T"
 						(effects
 							(font
 								(size 0 0)
@@ -2213,24 +2177,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "TX2-"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B3T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 17.78 15.24 180)
 					(length 5.08)
 					(name "VBUS"
@@ -2241,24 +2187,6 @@
 						)
 					)
 					(number "B4"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 15.24 180)
-					(length 5.08)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B4T"
 						(effects
 							(font
 								(size 0 0)
@@ -2285,24 +2213,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 10.16 180)
-					(length 5.08)
-					(name "CC2"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B5T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 17.78 -5.08 180)
 					(length 5.08)
 					(name "D+B"
@@ -2313,24 +2223,6 @@
 						)
 					)
 					(number "B6"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -5.08 180)
-					(length 5.08)
-					(name "D+B"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B6T"
 						(effects
 							(font
 								(size 0 0)
@@ -2357,24 +2249,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 -2.54 180)
-					(length 5.08)
-					(name "D-B"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B7T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 17.78 -7.62 180)
 					(length 5.08)
 					(name "SBU2"
@@ -2385,24 +2259,6 @@
 						)
 					)
 					(number "B8"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -7.62 180)
-					(length 5.08)
-					(name "SBU2"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B8T"
 						(effects
 							(font
 								(size 0 0)
@@ -2429,24 +2285,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 12.7 180)
-					(length 5.08)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B9T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 17.78 5.08 180)
 					(length 5.08)
 					(name "RX1-"
@@ -2457,24 +2295,6 @@
 						)
 					)
 					(number "B10"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 5.08 180)
-					(length 5.08)
-					(name "RX1-"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B10T"
 						(effects
 							(font
 								(size 0 0)
@@ -2501,24 +2321,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 7.62 180)
-					(length 5.08)
-					(name "RX1+"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B11T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 17.78 -12.7 180)
 					(length 5.08)
 					(name "GND"
@@ -2537,232 +2339,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 -12.7 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "B12T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at -17.78 -15.24 0)
 					(length 5.08)
-					(name "SHIELDA"
+					(name "SHIELD"
 						(effects
 							(font
 								(size 1.524 1.524)
 							)
 						)
 					)
-					(number "S1B"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -15.24 0)
-					(length 5.08)
-					(name "SHIELDA"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S1T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -15.24 0)
-					(length 5.08)
-					(name "SHIELDA"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S1TH"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -15.24 0)
-					(length 5.08)
-					(name "SHIELDA"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S2B"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -15.24 0)
-					(length 5.08)
-					(name "SHIELDA"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S2T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -15.24 0)
-					(length 5.08)
-					(name "SHIELDA"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S2TH"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S3B"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S3T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S3TH"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S4B"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S4T"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S4TH"
+					(number "SH"
 						(effects
 							(font
 								(size 0 0)
@@ -2872,12 +2458,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d47ff29f-4849-43dd-a7f4-a9f36a38596d")
-	)
-	(junction
-		(at 243.84 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4ebd0b7-756f-45e7-a99c-71c19cb1e641")
 	)
 	(junction
 		(at 203.2 119.38)
@@ -3682,16 +3262,6 @@
 			(type solid)
 		)
 		(uuid "837f2529-39a1-4d59-99cc-90181d9a6a9f")
-	)
-	(wire
-		(pts
-			(xy 241.3 149.86) (xy 243.84 149.86)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "8aece2b3-97e7-4827-8d5d-8786aca2803c")
 	)
 	(wire
 		(pts
@@ -5020,7 +4590,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:DX07S024XJ1R1100"
+		(property "Footprint" "pcbgolf:USB_C_Receptacle_ShouHan_TYPE-C-24P-QT"
 			(at 223.52 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -5053,7 +4623,7 @@
 				)
 			)
 		)
-		(property "MPN" "DX07S024XJ1R1100"
+		(property "MPN" "TYPE-C 24P QT"
 			(at 223.52 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -5065,17 +4635,33 @@
 				(justify left bottom)
 			)
 		)
+		(property "LCSC" "C2681555"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SHOU HAN"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A4"
 			(uuid "41569ac9-cc33-434b-a934-acac60fc6791")
 		)
-		(pin "B1T"
-			(uuid "c133579c-fca4-4377-9f22-29b421ca4a55")
-		)
 		(pin "A10"
 			(uuid "d80e84aa-a5f8-4b3b-bcda-a097c0fa929f")
-		)
-		(pin "B7T"
-			(uuid "9903bacb-c304-483c-b3b8-9229c10cb3f8")
 		)
 		(pin "B3"
 			(uuid "dee69236-512a-4029-8f2c-c9386d304900")
@@ -5089,9 +4675,6 @@
 		(pin "A1"
 			(uuid "2110e4c5-e96a-486b-84cd-40aee2ed4f67")
 		)
-		(pin "B3T"
-			(uuid "26e75bc3-8cb6-4fe6-bb80-9b2cd5939726")
-		)
 		(pin "B2"
 			(uuid "01bce7d8-aa3a-4583-acb1-9a0bc98612fa")
 		)
@@ -5104,14 +4687,8 @@
 		(pin "A12"
 			(uuid "186711da-9925-41e5-b4a5-dc8e4f547e4f")
 		)
-		(pin "B4T"
-			(uuid "41b48c86-a1ed-4e34-ba8e-b97a65ca9fa5")
-		)
 		(pin "A3"
 			(uuid "5aab4457-ab8d-49f7-86c5-f906132db031")
-		)
-		(pin "B2T"
-			(uuid "303ad33e-f662-4218-973f-98d85686ef59")
 		)
 		(pin "B7"
 			(uuid "88b081c5-3811-49c8-b662-b5ca52beaec0")
@@ -5137,29 +4714,8 @@
 		(pin "A7"
 			(uuid "4d3ad29b-2aa0-4a49-8bcd-804331b062e8")
 		)
-		(pin "B5T"
-			(uuid "594a91a0-4522-4091-8fe0-86d6a40d13bf")
-		)
-		(pin "B6T"
-			(uuid "bd0761b1-b606-48ee-87d0-8760ab8c2ba2")
-		)
-		(pin "S2TH"
-			(uuid "34450033-a7d5-4180-8926-52543b06078c")
-		)
-		(pin "S3TH"
-			(uuid "2fb15e78-e721-499c-9908-62f0c46286ac")
-		)
-		(pin "S2B"
-			(uuid "f6f5a1d6-9ba6-4c94-b2e2-9b602fb5902d")
-		)
-		(pin "S4TH"
-			(uuid "aff2e0aa-144c-49c8-bb04-fe9e7401f598")
-		)
 		(pin "B10"
 			(uuid "075b6901-3b1c-4c74-8e89-36b14d65e2fb")
-		)
-		(pin "B8T"
-			(uuid "4c372434-1a12-4ed6-a5cb-a1058a3177b0")
 		)
 		(pin "B12"
 			(uuid "df7c8fa4-73bd-4903-ab1f-ee20f000fd55")
@@ -5170,44 +4726,11 @@
 		(pin "B9"
 			(uuid "b61f69f5-a849-447e-b335-f7851f0907ea")
 		)
-		(pin "B12T"
-			(uuid "93e6bda0-b9bd-4fa1-9a1f-7db75b5afdde")
-		)
-		(pin "S1T"
-			(uuid "557255f7-f6c0-4642-9234-d7dda46cfcc6")
-		)
 		(pin "B11"
 			(uuid "14545c68-0475-4378-ae57-e6702892f1b1")
 		)
-		(pin "S1TH"
-			(uuid "d6755db8-ff92-40d4-a2dc-4d7d8498b1f9")
-		)
-		(pin "B9T"
-			(uuid "85184405-8f79-488a-b064-9931a7be9277")
-		)
-		(pin "B11T"
-			(uuid "516ead09-794f-40e7-9eed-5f85f09f9389")
-		)
-		(pin "S2T"
-			(uuid "413dafd8-7da1-4c4f-a977-f4c79d27ecbf")
-		)
-		(pin "S3B"
-			(uuid "ac93ae4c-67e6-4a35-b2a7-e9e48221a186")
-		)
-		(pin "B10T"
-			(uuid "e1bf56eb-66e7-45bf-8091-b1d6d64544b2")
-		)
-		(pin "S1B"
-			(uuid "b41ddfb5-02a7-49aa-b37f-9e199c4e826f")
-		)
-		(pin "S3T"
-			(uuid "16bbc16d-1ceb-45ef-b56c-fdaa3cedfa15")
-		)
-		(pin "S4B"
-			(uuid "77a1bb7d-ad31-4c5b-8d2f-8917bfa7cc5b")
-		)
-		(pin "S4T"
-			(uuid "23c1488d-e66f-4926-a9f5-a085506bb1da")
+		(pin "SH"
+			(uuid "4f1c0b90-6bac-4dfc-897d-775b45ea6346")
 		)
 		(instances
 			(project "pcbgolf"
@@ -6987,7 +6510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:0472192001"
+		(property "Footprint" "pcbgolf:microSD_Hirose_DM3D-SF"
 			(at 200.66 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -7020,7 +6543,7 @@
 				)
 			)
 		)
-		(property "MPN" "47219-2001"
+		(property "MPN" "DM3D-SF"
 			(at 200.66 76.2 0)
 			(hide yes)
 			(show_name no)

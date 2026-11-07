@@ -89,3 +89,15 @@ def translate(ref, pin, ctx, side):  # noqa: F811
 
 # DNP in the original design, now kept off the board entirely
 DROP |= {"J4", "BH1", "BH2", "BH3", "BH4"}
+
+# --- USB-C receptacles -> stock USB_C_Receptacle symbol --------------------
+USB_REFS = {"J3", "J5", "J6", "J7", "J8"}
+_translate_usb_base = translate
+
+
+def translate(ref, pin, ctx, side):  # noqa: F811
+    if ref in USB_REFS:
+        if pin.startswith("S"):
+            return (ref, "SH")
+        return (ref, pin[:-1] if pin.endswith("T") else pin)
+    return _translate_usb_base(ref, pin, ctx, side)

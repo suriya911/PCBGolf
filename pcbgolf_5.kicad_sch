@@ -3346,140 +3346,14 @@
 				(pin bidirectional line
 					(at -17.78 -15.24 0)
 					(length 5.08)
-					(name "SHIELDA"
+					(name "SHIELD"
 						(effects
 							(font
 								(size 1.524 1.524)
 							)
 						)
 					)
-					(number "S1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -15.24 0)
-					(length 5.08)
-					(name "SHIELDA"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -15.24 0)
-					(length 5.08)
-					(name "SHIELDA"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 -15.24 0)
-					(length 5.08)
-					(name "SHIELDA"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S4"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S11"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S12"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S13"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 -15.24 180)
-					(length 5.08)
-					(name "SHIELDB"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "S14"
+					(number "SH"
 						(effects
 							(font
 								(size 0 0)
@@ -3534,12 +3408,6 @@
 			(justify top)
 		)
 		(uuid "f8e03171-74fa-4708-98a0-1599b2b4e7d1")
-	)
-	(junction
-		(at 176.53 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "01314323-b378-4151-9401-3ba2fb91d26a")
 	)
 	(junction
 		(at 135.89 113.03)
@@ -3764,12 +3632,6 @@
 		(uuid "a82b0352-5d7e-4d2a-9ec4-28727404dc77")
 	)
 	(junction
-		(at 176.53 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad1f8a1e-31b5-41c5-b296-11f1e9beb8c2")
-	)
-	(junction
 		(at 335.28 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3816,12 +3678,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c3318381-3709-4220-a1df-ca0d165db8a4")
-	)
-	(junction
-		(at 176.53 219.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c55e2f5d-8d29-436e-8d61-b3455ceda002")
 	)
 	(junction
 		(at 22.86 85.09)
@@ -3936,12 +3792,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9dd2b6b-3264-4af3-85da-b2446ccea2a0")
-	)
-	(junction
-		(at 176.53 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd3d4cf3-ba8d-471c-8707-d953b2b53125")
 	)
 	(no_connect
 		(at 49.53 49.53)
@@ -4738,16 +4588,6 @@
 			(type solid)
 		)
 		(uuid "26a376d1-29aa-471e-88dd-c1544bd2a873")
-	)
-	(wire
-		(pts
-			(xy 173.99 166.37) (xy 176.53 166.37)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "26b5cc32-036c-42e5-89f7-2faa0a8b9fbf")
 	)
 	(wire
 		(pts
@@ -5591,16 +5431,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 59.69) (xy 176.53 59.69)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "564983b0-d2d9-4c72-99f0-eeddfbd16cdc")
-	)
-	(wire
-		(pts
 			(xy 135.89 113.03) (xy 135.89 115.57)
 		)
 		(stroke
@@ -6288,16 +6118,6 @@
 			(type solid)
 		)
 		(uuid "7da6a079-adce-43a3-ab1f-eb3ce0584d48")
-	)
-	(wire
-		(pts
-			(xy 173.99 219.71) (xy 176.53 219.71)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "8089a1a9-de52-45c0-887c-3d611962858b")
 	)
 	(wire
 		(pts
@@ -8028,16 +7848,6 @@
 			(type solid)
 		)
 		(uuid "f9ea9d86-7ccd-4f71-b772-386581bd1e98")
-	)
-	(wire
-		(pts
-			(xy 173.99 113.03) (xy 176.53 113.03)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "f9ec3eee-7249-439c-9f1c-944242aa6582")
 	)
 	(wire
 		(pts
@@ -10766,7 +10576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:USB-C-FEMALE-VERT-GCT"
+		(property "Footprint" "pcbgolf:USB_C_Receptacle_ShouHan_TYPE-C-24P-QT"
 			(at 156.21 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -10799,7 +10609,7 @@
 				)
 			)
 		)
-		(property "MPN" "10132328-10011LF"
+		(property "MPN" "TYPE-C 24P QT"
 			(at 156.21 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -10809,6 +10619,28 @@
 					(size 1.778 1.5113)
 				)
 				(justify left bottom)
+			)
+		)
+		(property "LCSC" "C2681555"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SHOU HAN"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "A5"
@@ -10880,32 +10712,11 @@
 		(pin "B12"
 			(uuid "ed91dea2-6b85-4abd-8631-ca6ed187fcd2")
 		)
-		(pin "S1"
-			(uuid "c663d052-d7e4-483e-8f3f-c579f375db37")
-		)
-		(pin "S2"
-			(uuid "b733fd32-5220-4435-8fec-9b556940cb2c")
-		)
-		(pin "S3"
-			(uuid "a7ed64f4-d5f4-461f-af3b-90a0f69b7b81")
-		)
-		(pin "S11"
-			(uuid "de946206-4927-4931-884c-d06c669f9e74")
-		)
 		(pin "B10"
 			(uuid "241fdd48-b0b2-4a1d-9ca2-b16f60297648")
 		)
-		(pin "S12"
-			(uuid "4888e3e1-bf4c-4716-85e0-69915bb22670")
-		)
-		(pin "S4"
-			(uuid "e819cf16-9479-4740-a42e-9506f69207e4")
-		)
-		(pin "S13"
-			(uuid "2eed8d5f-1136-41c1-b563-1a4b1414885a")
-		)
-		(pin "S14"
-			(uuid "b0c3e97f-ebb3-43d0-aef1-41b735ca5470")
+		(pin "SH"
+			(uuid "664476e5-5656-4856-969d-3dae3e19c4ce")
 		)
 		(instances
 			(project "pcbgolf"
@@ -12137,7 +11948,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:USB-C-FEMALE-VERT-GCT"
+		(property "Footprint" "pcbgolf:USB_C_Receptacle_ShouHan_TYPE-C-24P-QT"
 			(at 156.21 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -12170,7 +11981,7 @@
 				)
 			)
 		)
-		(property "MPN" "10132328-10011LF"
+		(property "MPN" "TYPE-C 24P QT"
 			(at 156.21 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -12180,6 +11991,28 @@
 					(size 1.778 1.5113)
 				)
 				(justify left bottom)
+			)
+		)
+		(property "LCSC" "C2681555"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SHOU HAN"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "A2"
@@ -12199,9 +12032,6 @@
 		)
 		(pin "B8"
 			(uuid "1e15f768-aef6-4bd6-b52b-6d4efc901737")
-		)
-		(pin "S11"
-			(uuid "e3e51851-11a3-4a6f-8757-951888f963c7")
 		)
 		(pin "A5"
 			(uuid "6ac8a32d-05d3-4e4a-bc76-453635cb2dc5")
@@ -12245,17 +12075,11 @@
 		(pin "B10"
 			(uuid "2308b0c2-f71c-4570-b953-e0c912bde795")
 		)
-		(pin "S2"
-			(uuid "a5fa88a7-81ec-4df2-8002-ab6fdacd093b")
-		)
 		(pin "B12"
 			(uuid "2b00859d-a2cb-40c6-9e18-b14ad72c3bb8")
 		)
 		(pin "A6"
 			(uuid "a8a2072b-5a6e-44b9-a208-1604241758fe")
-		)
-		(pin "S3"
-			(uuid "4aea4d48-6062-4d94-ab79-ad963c72d875")
 		)
 		(pin "A10"
 			(uuid "a86e2644-7430-46be-a00e-1edbdd7cc9ae")
@@ -12263,20 +12087,8 @@
 		(pin "B3"
 			(uuid "3631d9e6-376c-4594-891c-68059368a6e3")
 		)
-		(pin "S1"
-			(uuid "87425e85-2d03-41b0-abd6-dc01d3c3a494")
-		)
-		(pin "S4"
-			(uuid "19bab596-3f10-4c05-96e2-2df9a719bf29")
-		)
-		(pin "S12"
-			(uuid "5c457bee-d007-42b9-9ef3-ce6fb1dbe196")
-		)
-		(pin "S13"
-			(uuid "16016d71-d227-4cfe-b449-daa8af025de3")
-		)
-		(pin "S14"
-			(uuid "d4df1fe6-ae7b-4520-bed8-7be6b75dddb3")
+		(pin "SH"
+			(uuid "3ef7cda5-f64a-474d-9f66-8895686fdb70")
 		)
 		(instances
 			(project "pcbgolf"
@@ -18725,7 +18537,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:USB-C-FEMALE-VERT-GCT"
+		(property "Footprint" "pcbgolf:USB_C_Receptacle_ShouHan_TYPE-C-24P-QT"
 			(at 156.21 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -18758,7 +18570,7 @@
 				)
 			)
 		)
-		(property "MPN" "10132328-10011LF"
+		(property "MPN" "TYPE-C 24P QT"
 			(at 156.21 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -18768,6 +18580,28 @@
 					(size 1.778 1.5113)
 				)
 				(justify left bottom)
+			)
+		)
+		(property "LCSC" "C2681555"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SHOU HAN"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "A9"
@@ -18815,15 +18649,6 @@
 		(pin "A7"
 			(uuid "0b96057f-b315-419d-8168-89a70c46392a")
 		)
-		(pin "S1"
-			(uuid "0b932bb9-bd93-4858-9430-6011be820bb2")
-		)
-		(pin "S11"
-			(uuid "eb4885e3-1897-490b-8968-1ade160c1b31")
-		)
-		(pin "S14"
-			(uuid "01c64916-d84a-4166-8258-ccc51d82e97c")
-		)
 		(pin "B5"
 			(uuid "b1ab6729-62ab-427a-874f-a15ee640e34f")
 		)
@@ -18833,20 +18658,8 @@
 		(pin "B8"
 			(uuid "3b7c5d1d-b504-46e3-8567-99886e603a40")
 		)
-		(pin "S3"
-			(uuid "53d4f937-c342-47dc-8868-c9054a2603d6")
-		)
-		(pin "S4"
-			(uuid "4f80ba2b-61c0-4730-8ba1-8ba5750a90c7")
-		)
-		(pin "S12"
-			(uuid "1b6c7f16-0fbf-4a23-aa7d-bfc201b69fb6")
-		)
 		(pin "B12"
 			(uuid "82833173-866a-4b0e-ad11-1355746ff2ba")
-		)
-		(pin "S13"
-			(uuid "5b8be042-2d23-4c7c-bea1-f227bd6008c7")
 		)
 		(pin "B4"
 			(uuid "bc146b29-742d-49d0-a1b0-c1e08e89397e")
@@ -18860,11 +18673,11 @@
 		(pin "B10"
 			(uuid "bcee261a-409e-4d5d-b962-d81fd5341669")
 		)
-		(pin "S2"
-			(uuid "72b1c383-347f-45b5-9a8e-de8914977a01")
-		)
 		(pin "B11"
 			(uuid "e3c773c0-02e6-43ed-915d-2d7c713085d7")
+		)
+		(pin "SH"
+			(uuid "3f2d43bf-2963-443e-98cc-3639be78554c")
 		)
 		(instances
 			(project "pcbgolf"
@@ -24230,7 +24043,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:USB-C-FEMALE-VERT-GCT"
+		(property "Footprint" "pcbgolf:USB_C_Receptacle_ShouHan_TYPE-C-24P-QT"
 			(at 156.21 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -24263,7 +24076,7 @@
 				)
 			)
 		)
-		(property "MPN" "10132328-10011LF"
+		(property "MPN" "TYPE-C 24P QT"
 			(at 156.21 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -24273,6 +24086,28 @@
 					(size 1.778 1.5113)
 				)
 				(justify left bottom)
+			)
+		)
+		(property "LCSC" "C2681555"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SHOU HAN"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "A4"
@@ -24329,17 +24164,8 @@
 		(pin "B12"
 			(uuid "cd68d002-42e4-486e-9c3c-6045e041a394")
 		)
-		(pin "S1"
-			(uuid "dfebdd67-915a-4282-be65-cf7a671bacdd")
-		)
 		(pin "B4"
 			(uuid "57d23577-c178-4136-82db-8dc6f41d58c3")
-		)
-		(pin "S4"
-			(uuid "f0fd4ed7-15a6-4d3e-9653-a04ce23c96ca")
-		)
-		(pin "S13"
-			(uuid "a678774c-db26-4190-ad06-cb81aa192efa")
 		)
 		(pin "B8"
 			(uuid "2f3ce9e6-ac21-4cc4-aff8-0ae166340d4f")
@@ -24350,26 +24176,14 @@
 		(pin "B9"
 			(uuid "f89dd6cb-980c-430b-96d7-85c1c7fd741a")
 		)
-		(pin "S2"
-			(uuid "80beaa98-bc47-4473-9dda-b455d7911658")
-		)
 		(pin "B11"
 			(uuid "b75b28fb-f32c-4298-8539-12e61a7471b5")
-		)
-		(pin "S11"
-			(uuid "68b28b6d-15a3-43b8-86dc-87f1a0a201e6")
-		)
-		(pin "S14"
-			(uuid "870345f7-4d56-48f1-b58b-a72cc2f4d3d7")
 		)
 		(pin "B7"
 			(uuid "72677160-2738-412f-a4d7-c6d2e7bfcbad")
 		)
-		(pin "S12"
-			(uuid "1c7e933f-6eeb-4bfc-b44b-dbb3684dfe10")
-		)
-		(pin "S3"
-			(uuid "170a4bdd-56dd-4c1d-91bf-c3e874400fbe")
+		(pin "SH"
+			(uuid "4e899421-1826-422e-9572-a37a3ce465f6")
 		)
 		(instances
 			(project "pcbgolf"

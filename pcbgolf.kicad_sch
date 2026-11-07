@@ -8347,7 +8347,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:DCJACK_2MM_SMT"
+		(property "Footprint" "pcbgolf:DC_Jack_SameSky_PJ-083AH"
 			(at 38.1 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8380,7 +8380,7 @@
 				)
 			)
 		)
-		(property "MPN" "PJ-002AH-SMT-TR"
+		(property "MPN" "PJ-083AH"
 			(at 38.1 43.18 0)
 			(hide yes)
 			(show_name no)
