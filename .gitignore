@@ -17,3 +17,10 @@ fp-info-cache
 *.swo
 .DS_Store
 Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# local scratch
+scratch/
