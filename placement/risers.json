@@ -1,0 +1,154 @@
+{
+ "P2": {
+  "at": [
+   20.0,
+   10.0
+  ],
+  "nets": [
+   "CH2_D_P",
+   "CH2_D_N",
+   "CH2_SBU1",
+   "CH2_SBU2",
+   "CH2_PWR_EN",
+   "CH2_IMON"
+  ],
+  "rows": 2,
+  "dir": "x"
+ },
+ "P3": {
+  "at": [
+   20.0,
+   14.0
+  ],
+  "nets": [
+   "CH3_D_P",
+   "CH3_D_N",
+   "CH3_SBU1",
+   "CH3_SBU2",
+   "CH3_PWR_EN",
+   "CH3_IMON"
+  ],
+  "rows": 2,
+  "dir": "x"
+ },
+ "P4": {
+  "at": [
+   20.0,
+   18.0
+  ],
+  "nets": [
+   "CH4_D_P",
+   "CH4_D_N",
+   "CH4_SBU1",
+   "CH4_SBU2",
+   "CH4_PWR_EN",
+   "CH4_IMON"
+  ],
+  "rows": 2,
+  "dir": "x"
+ },
+ "P1": {
+  "at": [
+   2.0,
+   20.0
+  ],
+  "nets": [
+   "CH1_D_P",
+   "CH1_D_N",
+   "CH1_SBU1",
+   "CH1_SBU2",
+   "CH1_PWR_EN",
+   "CH1_IMON"
+  ],
+  "rows": 1,
+  "dir": "x"
+ },
+ "P5": {
+  "at": [
+   3.0,
+   22.0
+  ],
+  "nets": [
+   "CAN0_H",
+   "CAN0_L",
+   "CAN1_H",
+   "CAN1_L",
+   "CAN2_H",
+   "CAN2_L",
+   "CAN3_H",
+   "CAN3_L"
+  ],
+  "rows": 2,
+  "dir": "y"
+ },
+ "P6": {
+  "at": [
+   2.0,
+   30.0
+  ],
+  "nets": [
+   "+12V",
+   "+12V#2",
+   "GND",
+   "GND#2",
+   "GND#3",
+   "GND#4"
+  ],
+  "rows": 2,
+  "dir": "x"
+ },
+ "P8": {
+  "at": [
+   8.0,
+   30.0
+  ],
+  "nets": [
+   "USB_D_P",
+   "USB_D_N"
+  ],
+  "rows": 1,
+  "dir": "y"
+ },
+ "P7": {
+  "at": [
+   26.0,
+   6.0
+  ],
+  "span": [
+   "B1",
+   "B2"
+  ],
+  "nets": [
+   "+3V3",
+   "+3V3#2",
+   "GND#5",
+   "BTN",
+   "LED_R",
+   "LED_G",
+   "LED_B",
+   "SD_CLK",
+   "SD_CMD",
+   "SD_D0",
+   "SD_D1",
+   "SD_D2",
+   "SD_D3",
+   "STM_D_P",
+   "STM_D_N",
+   "CAN0_TX",
+   "CAN0_RX",
+   "CAN0_EN",
+   "CAN1_TX",
+   "CAN1_RX",
+   "CAN1_EN",
+   "CAN2_TX",
+   "CAN2_RX",
+   "CAN2_EN",
+   "CAN3_TX",
+   "CAN3_RX",
+   "CAN3_EN",
+   "GND#6"
+  ],
+  "rows": 4,
+  "dir": "y"
+ }
+}

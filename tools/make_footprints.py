@@ -23,6 +23,78 @@ PRETTY = os.path.join(ROOT, "pcbgolf.pretty")
 SHAPES = os.path.join(ROOT, "pcbgolf.3dshapes")
 
 
+def drop_pads(path, at_list):
+    """Remove pads at the given (x, y) positions (duplicate vendor pads)."""
+    sys.path.insert(0, os.path.dirname(__file__))
+    from sexpr import parse, dumps, find, first
+    mod = parse(open(path, encoding="utf8").read())
+    keep = []
+    for c in mod:
+        if isinstance(c, list) and c and c[0] == "pad":
+            at = first(c, "at")
+            if any(abs(float(at[1]) - x) < 0.01 and abs(float(at[2]) - y) < 0.01 for x, y in at_list):
+                continue
+        keep.append(c)
+    mod[:] = keep
+    open(path, "w", encoding="utf8").write(dumps(mod) + "\n")
+
+
+def nudge_pads(path, moves):
+    """Move pads: {(x, y): (new_x, new_y)}."""
+    sys.path.insert(0, os.path.dirname(__file__))
+    from sexpr import parse, dumps, find, first
+    mod = parse(open(path, encoding="utf8").read())
+    for pad in find(mod, "pad"):
+        at = first(pad, "at")
+        for (x, y), (nx, ny) in moves.items():
+            if abs(float(at[1]) - x) < 0.01 and abs(float(at[2]) - y) < 0.01:
+                at[1], at[2] = f"{nx:g}", f"{ny:g}"
+    open(path, "w", encoding="utf8").write(dumps(mod) + "\n")
+
+
+def single_layer(path, ring, min_round=0.5, min_slot=1.0, keep_ring=None):
+    """JLC single-sided boards have no plated holes, so every through-hole pad becomes
+    an NPTH with a copper ring on F.Cu only. Holes grow to the fab minimums (0.5 mm
+    round, 1.0 mm slot width), the copper ring is `ring` all round. Holes without
+    copper (locating pegs) become plain NPTH. keep_ring: {pad name: ring} overrides.
+    """
+    sys.path.insert(0, os.path.dirname(__file__))
+    from sexpr import Q, parse, dumps, find, first
+    mod = parse(open(path, encoding="utf8").read())
+    for pad in find(mod, "pad"):
+        if pad[2] != "thru_hole":
+            continue
+        size = first(pad, "size")
+        drill = first(pad, "drill")
+        oval = drill[1] == "oval"
+        dx = float(drill[2] if oval else drill[1])
+        dy = float(drill[3]) if oval else dx
+        sx, sy = float(size[1]), float(size[2])
+        pad[2] = "np_thru_hole"
+        layers = first(pad, "layers")
+        if sx <= dx + 1e-3 and sy <= dy + 1e-3:          # bare locating hole
+            d = max(dx, min_round)
+            pad[1] = Q("")
+            pad[3] = "circle"
+            size[1:] = [f"{d:g}", f"{d:g}"]
+            drill[1:] = [f"{d:g}"]
+            layers[1:] = [Q("*.Cu"), Q("*.Mask")]
+            continue
+        if oval:
+            if dx <= dy:
+                dx = max(dx, min_slot); dy = max(dy, dx + 0.01)
+            else:
+                dy = max(dy, min_slot); dx = max(dx, dy + 0.01)
+            drill[1:] = ["oval", f"{dx:.3f}", f"{dy:.3f}"]
+        else:
+            dx = dy = max(dx, min_round)
+            drill[1:] = [f"{dx:.3f}"]
+        r = (keep_ring or {}).get(pad[1], ring)
+        size[1:] = [f"{dx + 2 * r:.3f}", f"{dy + 2 * r:.3f}"]
+        layers[1:] = [Q("F.Cu"), Q("F.Mask")]
+    open(path, "w", encoding="utf8").write(dumps(mod) + "\n")
+
+
 def model_line(sub, name):
     return f'(model "${{KIPRJMOD}}/pcbgolf.3dshapes/{sub}/{name}"'
 
@@ -95,9 +167,28 @@ def pj083ah():
 def main(src):
     import_easyeda(src, "C2681555", "USB_C_Receptacle_ShouHan_TYPE-C-24P-QT", "Connector_USB.3dshapes",
                    {"25": "SH", "3": "SH", "4": "SH"})
+    # EasyEDA draws each rear shell leg as two overlapping slots; one hole per leg is enough
+    drop_pads(os.path.join(PRETTY, "USB_C_Receptacle_ShouHan_TYPE-C-24P-QT.kicad_mod"),
+              [(4.05, -1.47), (-4.08, -1.47)])
+    # the 1.0 mm slot is twice the tab thickness; move the rear slots 0.1 mm outward so the
+    # hole stays 0.2 mm from the B1/B12 pads (the tab still sits fully inside the slot)
+    nudge_pads(os.path.join(PRETTY, "USB_C_Receptacle_ShouHan_TYPE-C-24P-QT.kicad_mod"),
+               {(4.32, -2.03): (4.42, -2.03), (-4.32, -2.03): (-4.42, -2.03)})
+    # shell tabs sit 0.15 mm from the outer signal pads: only a 0.25 mm ring fits
+    single_layer(os.path.join(PRETTY, "USB_C_Receptacle_ShouHan_TYPE-C-24P-QT.kicad_mod"), ring=0.25)
     import_easyeda(src, "C719027", "microSD_Hirose_DM3D-SF", "Connector_Card.3dshapes",
                    {"9": "", "10": "", "11": "G1", "12": "G2", "13": "G3", "14": "G4"})
+    # SBU indicator: Kingbright bicolor 1.6x1.3 (pins 1/3 anodes, 2/4 cathodes) for the SOT-23 AM23ESGW
+    import_easyeda(src, "C6506889", "LED_Bicolor_Kingbright_APTB1612", "LED_SMD.3dshapes",
+                   {"1": "AR", "3": "AG", "2": "C", "4": "C"})
+    # SBU switches: DMG1026UV dual N 60 V SOT-563 for the TSMT5 QS5K2; both sources -> pin 2 (S)
+    import_easyeda(src, "C508194", "SOT-563_DMG1026UV", "Package_TO_SOT_SMD.3dshapes",
+                   {"1": "2", "2": "1", "3": "4", "4": "2", "5": "3", "6": "5"})
+    # boot/user button: Panasonic EVQ-P7 side push, 1.35 mm tall, for the 3.1 mm EVQ-Q2
+    import_easyeda(src, "C485515", "SW_Panasonic_EVQ-P7B01P", "Button_Switch_SMD.3dshapes",
+                   {"1": "A", "1'": "A'", "2": "B", "2'": "B'"})
     pj083ah()
+    single_layer(os.path.join(PRETTY, "DC_Jack_SameSky_PJ-083AH.kicad_mod"), ring=0.45)
 
 
 if __name__ == "__main__":

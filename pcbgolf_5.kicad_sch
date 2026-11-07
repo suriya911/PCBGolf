@@ -10760,7 +10760,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-5"
+		(property "Footprint" "pcbgolf:SOT-563_DMG1026UV"
 			(at 224.79 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -10793,7 +10793,7 @@
 				)
 			)
 		)
-		(property "MPN" "QS5K2TR"
+		(property "MPN" "DMG1026UV-7"
 			(at 224.79 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -11846,7 +11846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-5"
+		(property "Footprint" "pcbgolf:SOT-563_DMG1026UV"
 			(at 307.34 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -11879,7 +11879,7 @@
 				)
 			)
 		)
-		(property "MPN" "QS5K2TR"
+		(property "MPN" "DMG1026UV-7"
 			(at 307.34 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -12411,7 +12411,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-3"
+		(property "Footprint" "pcbgolf:LED_Bicolor_Kingbright_APTB1612"
 			(at 307.34 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -12444,7 +12444,7 @@
 				)
 			)
 		)
-		(property "MPN" "AM23ESGW"
+		(property "MPN" "APTB1612SURKCGKC-F01"
 			(at 307.34 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -12735,7 +12735,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-3"
+		(property "Footprint" "pcbgolf:LED_Bicolor_Kingbright_APTB1612"
 			(at 307.34 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -12768,7 +12768,7 @@
 				)
 			)
 		)
-		(property "MPN" "AM23ESGW"
+		(property "MPN" "APTB1612SURKCGKC-F01"
 			(at 307.34 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -12831,7 +12831,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-5"
+		(property "Footprint" "pcbgolf:SOT-563_DMG1026UV"
 			(at 307.34 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -12864,7 +12864,7 @@
 				)
 			)
 		)
-		(property "MPN" "QS5K2TR"
+		(property "MPN" "DMG1026UV-7"
 			(at 307.34 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -14286,7 +14286,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-3"
+		(property "Footprint" "pcbgolf:LED_Bicolor_Kingbright_APTB1612"
 			(at 224.79 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14319,7 +14319,7 @@
 				)
 			)
 		)
-		(property "MPN" "AM23ESGW"
+		(property "MPN" "APTB1612SURKCGKC-F01"
 			(at 224.79 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -15423,7 +15423,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-5"
+		(property "Footprint" "pcbgolf:SOT-563_DMG1026UV"
 			(at 307.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -15456,7 +15456,7 @@
 				)
 			)
 		)
-		(property "MPN" "QS5K2TR"
+		(property "MPN" "DMG1026UV-7"
 			(at 307.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -16413,7 +16413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-5"
+		(property "Footprint" "pcbgolf:SOT-563_DMG1026UV"
 			(at 307.34 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -16446,7 +16446,7 @@
 				)
 			)
 		)
-		(property "MPN" "QS5K2TR"
+		(property "MPN" "DMG1026UV-7"
 			(at 307.34 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -17121,7 +17121,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-3"
+		(property "Footprint" "pcbgolf:LED_Bicolor_Kingbright_APTB1612"
 			(at 224.79 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -17154,7 +17154,7 @@
 				)
 			)
 		)
-		(property "MPN" "AM23ESGW"
+		(property "MPN" "APTB1612SURKCGKC-F01"
 			(at 224.79 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -19996,7 +19996,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-3"
+		(property "Footprint" "pcbgolf:LED_Bicolor_Kingbright_APTB1612"
 			(at 307.34 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -20029,7 +20029,7 @@
 				)
 			)
 		)
-		(property "MPN" "AM23ESGW"
+		(property "MPN" "APTB1612SURKCGKC-F01"
 			(at 307.34 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -21226,7 +21226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-3"
+		(property "Footprint" "pcbgolf:LED_Bicolor_Kingbright_APTB1612"
 			(at 224.79 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -21259,7 +21259,7 @@
 				)
 			)
 		)
-		(property "MPN" "AM23ESGW"
+		(property "MPN" "APTB1612SURKCGKC-F01"
 			(at 224.79 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -21322,7 +21322,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-5"
+		(property "Footprint" "pcbgolf:SOT-563_DMG1026UV"
 			(at 224.79 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -21355,7 +21355,7 @@
 				)
 			)
 		)
-		(property "MPN" "QS5K2TR"
+		(property "MPN" "DMG1026UV-7"
 			(at 224.79 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -22249,7 +22249,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-3"
+		(property "Footprint" "pcbgolf:LED_Bicolor_Kingbright_APTB1612"
 			(at 307.34 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -22282,7 +22282,7 @@
 				)
 			)
 		)
-		(property "MPN" "AM23ESGW"
+		(property "MPN" "APTB1612SURKCGKC-F01"
 			(at 307.34 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -23170,7 +23170,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-5"
+		(property "Footprint" "pcbgolf:SOT-563_DMG1026UV"
 			(at 224.79 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -23203,7 +23203,7 @@
 				)
 			)
 		)
-		(property "MPN" "QS5K2TR"
+		(property "MPN" "DMG1026UV-7"
 			(at 224.79 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -24677,7 +24677,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-5"
+		(property "Footprint" "pcbgolf:SOT-563_DMG1026UV"
 			(at 224.79 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -24710,7 +24710,7 @@
 				)
 			)
 		)
-		(property "MPN" "QS5K2TR"
+		(property "MPN" "DMG1026UV-7"
 			(at 224.79 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -24857,7 +24857,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pcbgolf:SOT23-3"
+		(property "Footprint" "pcbgolf:LED_Bicolor_Kingbright_APTB1612"
 			(at 224.79 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -24890,7 +24890,7 @@
 				)
 			)
 		)
-		(property "MPN" "AM23ESGW"
+		(property "MPN" "APTB1612SURKCGKC-F01"
 			(at 224.79 184.15 0)
 			(hide yes)
 			(show_name no)

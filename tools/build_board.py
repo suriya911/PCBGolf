@@ -18,12 +18,36 @@ import pcbnew
 sys.path.insert(0, os.path.dirname(__file__))
 from netlist import load          # noqa: E402
 from partition import board_of    # noqa: E402
+import risers as riser_mod        # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIB = os.path.join(ROOT, "pcbgolf.pretty")
 
 TRACK = 0.127   # JLC 1-2 layer minimum is 5 mil
 CLEARANCE = 0.127
+
+
+POWER_PATTERNS = ["+12V", "+5V", "+3V3", "GND", "VBUS", "VDDLDO", "Net-(J*-VBUS*", "Net-(J1-PWR)"]
+
+
+def write_project(out):
+    """Board-local .kicad_pro: KiCad reads design rules and net classes from here."""
+    proj = json.load(open(os.path.join(ROOT, "pcbgolf.kicad_pro")))
+    rules = proj["board"]["design_settings"]["rules"]
+    rules.update({
+        "min_clearance": 0.1, "min_track_width": 0.1, "min_copper_edge_clearance": 0.2,
+        "min_hole_clearance": 0.2, "min_hole_to_hole": 0.25, "min_through_hole_diameter": 0.5,
+        "min_via_annular_width": 0.1, "min_text_height": 0.6, "min_text_thickness": 0.08,
+    })
+    classes = proj["net_settings"]["classes"]
+    default = dict(classes[0])
+    default.update({"name": "Default", "clearance": CLEARANCE, "track_width": TRACK})
+    power = dict(default)
+    power.update({"name": "Power", "track_width": 0.4, "priority": 0})
+    proj["net_settings"]["classes"] = [default, power]
+    proj["net_settings"]["netclass_patterns"] = [{"netclass": "Power", "pattern": p} for p in POWER_PATTERNS]
+    proj["meta"]["filename"] = os.path.basename(out).replace(".kicad_pcb", ".kicad_pro")
+    json.dump(proj, open(out.replace(".kicad_pcb", ".kicad_pro"), "w"), indent=2)
 
 
 def mm(v):
@@ -54,7 +78,7 @@ def outline(board, w, h):
         board.Add(seg)
 
 
-def build(netfile, board_name, placement_file, out, thickness=0.6):
+def build(netfile, board_name, placement_file, out, thickness=0.6, risers_file=None):
     parts, nets, pins = load(netfile)
     place = json.load(open(placement_file)) if placement_file and os.path.exists(placement_file) else {}
     w, h = place.get("outline", [30, 30])
@@ -92,10 +116,19 @@ def build(netfile, board_name, placement_file, out, thickness=0.6):
                 pad.SetNet(netinfo[net])
         board.Add(fp)
 
+    if risers_file and os.path.exists(risers_file):
+        boards = {}
+        for name, members in nets.items():
+            boards[name] = {board_of(r) for r, _, _ in members}
+        riser_mod.add_to_board(board, riser_mod.load(risers_file), board_name,
+                               lambda n: boards.get(n, set()), netinfo)
+
     outline(board, w, h)
     board.Save(out)
+    write_project(out)
     print(f"{board_name}: {sum(1 for _ in board.GetFootprints())} footprints, {len(netinfo)} nets -> {out}")
 
 
 if __name__ == "__main__":
-    build(*sys.argv[1:5])
+    a = sys.argv[1:]
+    build(a[0], a[1], a[2], a[3], float(a[4]) if len(a) > 4 else 0.6, a[5] if len(a) > 5 else None)

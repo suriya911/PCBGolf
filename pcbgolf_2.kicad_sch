@@ -8945,7 +8945,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:EVQ-Q2"
+		(property "Footprint" "pcbgolf:SW_Panasonic_EVQ-P7B01P"
 			(at 236.22 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -8978,7 +8978,7 @@
 				)
 			)
 		)
-		(property "MPN" "EVQ-Q2Y03W"
+		(property "MPN" "EVQ-P7B01P"
 			(at 236.22 148.59 0)
 			(hide yes)
 			(show_name no)
