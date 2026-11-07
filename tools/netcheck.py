@@ -70,8 +70,13 @@ def main():
         print("ORIG ONLY:", sorted(g))
     for g in sorted(extra, key=lambda g: sorted(g)):
         print("NEW ONLY: ", sorted(g))
-    print(f"{len(a)} nets checked, {len(missing)} missing, {len(extra)} new")
-    return 1 if (missing or extra) else 0
+    problems = []
+    if args.map and hasattr(mod, "extra_checks"):
+        problems = mod.extra_checks(nnets, ctx)
+        for msg in problems:
+            print("CHECK:", msg)
+    print(f"{len(a)} nets checked, {len(missing)} missing, {len(extra)} new, {len(problems)} check failures")
+    return 1 if (missing or extra or problems) else 0
 
 
 if __name__ == "__main__":

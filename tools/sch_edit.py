@@ -263,3 +263,101 @@ def move_group(sheet, refs, dx, dy):
             tips = [q for pts in pin_tip(s, sheet.libs[value(s, "lib_id")]).values() for q in pts]
             if any(q in seen_pts for q in tips):
                 _shift_at(s, dx, dy)
+
+
+POWER_NETS = {"GND": "pcbgolf:comma.ai_11112255_GND", "+3V3": "pcbgolf:+3V3"}
+GND_ROT = {(-1, 0): 270, (1, 0): 90, (0, 1): 0, (0, -1): 180}
+VCC_ROT = {(-1, 0): 90, (1, 0): 270, (0, -1): 0, (0, 1): 180}
+
+
+def add_lib_symbol(sheet, lib_symbol, lib_id):
+    """Put a library symbol into the sheet's lib_symbols cache under `lib_id`."""
+    libsec = first(sheet.root, "lib_symbols")
+    for s in find(libsec, "symbol"):
+        if s[1] == lib_id:
+            return s
+    sym = copy.deepcopy(lib_symbol)
+    sym[1] = Q(lib_id)
+    libsec.append(sym)
+    sheet.libs[lib_id] = sym
+    return sym
+
+
+class PartAdder:
+    """Drops new symbols onto a sheet and hooks every pin up with a stub + label."""
+
+    def __init__(self, sheet, inst_template, global_nets):
+        self.sh = sheet
+        self.tmpl = inst_template
+        self.global_nets = set(global_nets)
+        self.glabel = find(sheet.root, "global_label")[0]
+        loc = copy.deepcopy(self.glabel)
+        loc[0] = "label"
+        loc[:] = [c for c in loc if not (isinstance(c, list) and c and c[0] in ("shape", "property", "fields_autoplaced"))]
+        self.llabel = loc
+        self.power = {}
+        for s in sheet.symbols():
+            for net, lid in POWER_NETS.items():
+                if value(s, "lib_id") == lid:
+                    self.power.setdefault(net, s)
+        self.pwr_no = 950
+
+    def add(self, lib_id, ref, val, footprint, at, nets, rot=0, props=None):
+        lib = self.sh.libs[lib_id]
+        node = copy.deepcopy(self.tmpl)
+        first(node, "lib_id")[1] = Q(lib_id)
+        a = first(node, "at")
+        a[1:] = [f"{at[0]:g}", f"{at[1]:g}", f"{rot:g}"]
+        node[:] = [c for c in node if not (isinstance(c, list) and c and c[0] in ("mirror",))]
+        first(node, "uuid")[1] = new_uuid()
+        props = dict(props or {})
+        props.update({"Reference": ref, "Value": val, "Footprint": footprint})
+        seen = set()
+        for p in find(node, "property"):
+            if p[1] in props:
+                p[2] = Q(props[p[1]])
+                seen.add(p[1])
+            pa = first(p, "at")
+            if pa is not None:
+                pa[1:3] = [f"{at[0]:g}", f"{at[1] - 5:g}" if p[1] == "Reference" else f"{at[1] + 5:g}"]
+        for k, v in props.items():
+            if k not in seen:
+                node.append(["property", Q(k), Q(v), ["at", f"{at[0]:g}", f"{at[1]:g}", "0"],
+                             ["effects", ["font", ["size", "1.27", "1.27"]], ["hide", "yes"]]])
+        node[:] = [c for c in node if not (isinstance(c, list) and c and c[0] == "pin")]
+        pins = lib_pins(lib)
+        insert_at = len(node) - 1
+        for p in pins:
+            node.insert(insert_at, ["pin", Q(p["number"]), ["uuid", new_uuid()]])
+        for inst in find(node, "instances"):
+            for proj in find(inst, "project"):
+                for path in find(proj, "path"):
+                    r = first(path, "reference")
+                    if r is not None:
+                        r[1] = Q(ref)
+        self.sh.root.append(node)
+
+        tips = pin_tip(node, lib)
+        done = set()
+        for p in pins:
+            tip = tips[p["number"]][0]
+            if tip in done:
+                continue
+            done.add(tip)
+            net = nets.get(p["number"])
+            if net is None:
+                self.sh.add_no_connect(tip)
+                continue
+            # pin direction in sheet space, accounting for symbol rotation
+            out = pin_outward(p["rot"] + rot)
+            end = (round(tip[0] + out[0] * GRID, 3), round(tip[1] + out[1] * GRID, 3))
+            self.sh.add_wire(tip, end)
+            if net in POWER_NETS:
+                self.pwr_no += 1
+                rot_tbl = GND_ROT if net == "GND" else VCC_ROT
+                self.sh.add_power(self.power[net], end, rot_tbl[out], f"#PWR0{self.pwr_no}")
+            elif net in self.global_nets:
+                self.sh.add_label(self.glabel, net, end, label_angle(out))
+            else:
+                self.sh.add_label(self.llabel, net, end, label_angle(out))
+        return node

@@ -4741,6 +4741,14 @@
 		(uuid "79416c8a-d0af-4f05-a9e5-aa686c4955a1")
 	)
 	(no_connect
+		(at 153.67 132.08)
+		(uuid "7c1f5cea-b94f-4d7f-8ca5-698152e585e1")
+	)
+	(no_connect
+		(at 153.67 134.62)
+		(uuid "7e581ea2-e638-44bc-9916-b6864767bfcf")
+	)
+	(no_connect
 		(at 153.67 96.52)
 		(uuid "b9fca594-b043-45f3-9142-c246da28ce24")
 	)
@@ -5662,16 +5670,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 134.62) (xy 156.21 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a570af2-e0e7-44b3-9a0f-a70ea203e584")
-	)
-	(wire
-		(pts
 			(xy 153.67 170.18) (xy 156.21 170.18)
 		)
 		(stroke
@@ -5979,16 +5977,6 @@
 			(type solid)
 		)
 		(uuid "c00ac6c8-3d30-4a24-bad1-b83f4cd64381")
-	)
-	(wire
-		(pts
-			(xy 153.67 132.08) (xy 156.21 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0ac1771-5d48-44f7-bd12-e7404d005ddd")
 	)
 	(wire
 		(pts
@@ -7444,30 +7432,6 @@
 			)
 		)
 	)
-	(global_label "HUB_SCL"
-		(shape bidirectional)
-		(at 156.21 132.08 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left)
-		)
-		(uuid "7f1c7294-3bb7-4d50-851a-e0b28a551cdd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.21 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "VDDLDO"
 		(shape bidirectional)
 		(at 210.82 91.44 180)
@@ -8321,30 +8285,6 @@
 		(uuid "f0554c3f-d782-486a-931a-18799cbbe6d9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 213.005 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "HUB_SDA"
-		(shape bidirectional)
-		(at 156.21 134.62 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left)
-		)
-		(uuid "f65ce964-84ca-40b9-8044-6bf76adbdd28")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.21 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
