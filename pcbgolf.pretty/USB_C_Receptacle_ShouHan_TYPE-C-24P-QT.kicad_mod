@@ -57,7 +57,7 @@
 	(fp_line (start 4.45 -2.59) (end 4.45 5.31) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 4.45 5.31) (end -4.45 5.31) (layer F.CrtYd) (width 0.05))
 	(model "${KIPRJMOD}/pcbgolf.3dshapes/Connector_USB.3dshapes/USB_C_Receptacle_ShouHan_TYPE-C-24P-QT.step"
-		(offset (xyz 0.000 0.000 0.000))
+		(offset (xyz -0.000 -1.360 1.585))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))
 	)
