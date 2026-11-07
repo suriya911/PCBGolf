@@ -4384,7 +4384,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:DO-214AA(SMB)"
+		(property "Footprint" "pcbgolf:SOD-123F"
 			(at 58.42 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -4417,7 +4417,7 @@
 				)
 			)
 		)
-		(property "MPN" "SMAJ16CA-13-F"
+		(property "MPN" "SMF16CA"
 			(at 58.42 55.88 0)
 			(hide yes)
 			(show_name no)

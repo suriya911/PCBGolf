@@ -10616,7 +10616,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:XTAL-3.2X2.5"
+		(property "Footprint" "pcbgolf:Crystal_SMD_2016-4Pin_2.0x1.6mm"
 			(at 34.29 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10649,7 +10649,7 @@
 				)
 			)
 		)
-		(property "MPN" "RH100-25.000-12-F-1010-TR"
+		(property "MPN" "25MHz 2016-4P 12pF 20ppm"
 			(at 34.29 76.2 0)
 			(hide yes)
 			(show_name no)

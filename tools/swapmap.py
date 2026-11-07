@@ -86,3 +86,6 @@ def translate(ref, pin, ctx, side):  # noqa: F811
     if ref in OPAMPS and side == "orig":
         return (ref, OPAMP_PINS[pin]) if pin in OPAMP_PINS else None
     return _translate_base(ref, pin, ctx, side)
+
+# DNP in the original design, now kept off the board entirely
+DROP |= {"J4", "BH1", "BH2", "BH3", "BH4"}
