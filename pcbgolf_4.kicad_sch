@@ -5,6 +5,423 @@
 	(uuid "3dd848dd-20c1-4538-b9e1-dea1a629889b")
 	(paper "User" 297.0022 223.9264)
 	(lib_symbols
+		(symbol "pcbgolf:+12V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "pcbgolf:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "pcbgolf:+5V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "pcbgolf:OPA197IDR"
 			(pin_names
 				(offset 0.127)
@@ -45,11 +462,6 @@
 					)
 				)
 			)
-			(property "MPN" "OPA197IDR"
-				(at 0 0 0)
-				(hide yes)
-				(effects (font (size 1.27 1.27)))
-			)
 			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa197.pdf"
 				(at 1.27 30.48 0)
 				(show_name no)
@@ -62,6 +474,17 @@
 				)
 			)
 			(property "Description" "Single 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-8"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "OPA197IDR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -107,6 +530,43 @@
 						(type background)
 					)
 				)
+				(pin no_connect line
+					(at 2.54 0 270)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -143,17 +603,18 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 -2.54 0)
+				(pin no_connect line
+					(at 0 2.54 270)
 					(length 2.54)
-					(name "-"
+					(hide yes)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -198,44 +659,9 @@
 					)
 				)
 				(pin no_connect line
-					(at 2.54 0 270)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 0 2.54 270)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
 					(at 0 -2.54 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -1960,423 +2386,6 @@
 						(effects
 							(font
 								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "pcbgolf:+12V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "pcbgolf:+3V3"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "pcbgolf:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
 							)
 						)
 					)
@@ -5176,7 +5185,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 229.87 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5209,7 +5218,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-072K7L"
+		(property "MPN" "RC0201FR-072K7L"
 			(at 229.87 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5689,7 +5698,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 229.87 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -5722,7 +5731,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-072K7L"
+		(property "MPN" "RC0201FR-072K7L"
 			(at 229.87 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -6016,7 +6025,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6049,7 +6058,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100KL"
+		(property "MPN" "RC0201FR-07100KL"
 			(at 195.58 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6544,7 +6553,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -6577,7 +6586,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 195.58 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -7094,7 +7103,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-C"
+		(property "Footprint" "pcbgolf:C_0201_0603Metric"
 			(at 138.43 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7127,7 +7136,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033R61A104KE15D"
 			(at 138.43 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7187,7 +7196,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-C"
+		(property "Footprint" "pcbgolf:C_0201_0603Metric"
 			(at 138.43 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7220,7 +7229,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033R61A104KE15D"
 			(at 138.43 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7280,7 +7289,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 229.87 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -7313,7 +7322,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-072K7L"
+		(property "MPN" "RC0201FR-072K7L"
 			(at 229.87 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -7544,7 +7553,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-C"
+		(property "Footprint" "pcbgolf:C_0201_0603Metric"
 			(at 138.43 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7577,7 +7586,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033R61A104KE15D"
 			(at 138.43 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7823,7 +7832,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -7856,7 +7865,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100KL"
+		(property "MPN" "RC0201FR-07100KL"
 			(at 195.58 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -7916,7 +7925,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-C"
+		(property "Footprint" "pcbgolf:C_0201_0603Metric"
 			(at 151.13 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7949,7 +7958,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033R61A104KE15D"
 			(at 151.13 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -8165,7 +8174,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8198,7 +8207,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 195.58 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8414,7 +8423,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-C"
+		(property "Footprint" "pcbgolf:C_0201_0603Metric"
 			(at 151.13 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -8447,7 +8456,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033R61A104KE15D"
 			(at 151.13 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -8834,7 +8843,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8867,7 +8876,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 195.58 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9308,7 +9317,6 @@
 				)
 			)
 		)
-
 		(pin "8"
 			(uuid "4a8d2d52-36d9-4bcc-9a8f-f9faa510a209")
 		)
@@ -9646,7 +9654,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-C"
+		(property "Footprint" "pcbgolf:C_0201_0603Metric"
 			(at 138.43 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -9679,7 +9687,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033R61A104KE15D"
 			(at 138.43 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -9739,7 +9747,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9772,7 +9780,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100KL"
+		(property "MPN" "RC0201FR-07100KL"
 			(at 195.58 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9832,7 +9840,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -9865,7 +9873,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 195.58 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -10574,7 +10582,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10607,7 +10615,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 195.58 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -11095,7 +11103,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -11128,7 +11136,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 195.58 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -11708,7 +11716,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -11741,7 +11749,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100KL"
+		(property "MPN" "RC0201FR-07100KL"
 			(at 195.58 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -12696,7 +12704,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -12729,7 +12737,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 195.58 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -12961,7 +12969,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-C"
+		(property "Footprint" "pcbgolf:C_0201_0603Metric"
 			(at 151.13 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -12994,7 +13002,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033R61A104KE15D"
 			(at 151.13 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -13132,7 +13140,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 195.58 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -13165,7 +13173,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 195.58 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -13396,7 +13404,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-C"
+		(property "Footprint" "pcbgolf:C_0201_0603Metric"
 			(at 151.13 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -13429,7 +13437,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033R61A104KE15D"
 			(at 151.13 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -13489,7 +13497,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 229.87 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -13522,7 +13530,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-072K7L"
+		(property "MPN" "RC0201FR-072K7L"
 			(at 229.87 69.85 0)
 			(hide yes)
 			(show_name no)

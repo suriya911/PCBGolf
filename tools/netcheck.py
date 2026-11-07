@@ -24,6 +24,26 @@ def by_name(nets, ref):
     return out
 
 
+def merge_shorted(nets, shorted):
+    """Join nets that are only separated by a 0R link that has been removed."""
+    if not shorted:
+        return nets
+    parent = {n: n for n in nets}
+
+    def root(n):
+        while parent[n] != n:
+            n = parent[n]
+        return n
+    for ref in shorted:
+        ends = [n for n, m in nets.items() if any(r == ref for r, _, _ in m)]
+        for other in ends[1:]:
+            parent[root(other)] = root(ends[0])
+    merged = {}
+    for n, m in nets.items():
+        merged.setdefault(root(n), []).extend(x for x in m if x[0] not in shorted)
+    return merged
+
+
 def partition(nets, translate=lambda r, p: (r, p), drop=()):
     groups = []
     for name, members in nets.items():
@@ -62,6 +82,8 @@ def main():
     else:
         translate_new = translate
 
+    if args.map:
+        onets = merge_shorted(onets, getattr(mod, "SHORTED", ()))
     a = partition(onets, translate, drop)
     b = partition(nnets, translate_new, drop)
     missing = a - b

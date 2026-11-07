@@ -5,6 +5,145 @@
 	(uuid "a460568a-62a0-4817-80d6-f93742958170")
 	(paper "User" 376.174 279.4)
 	(lib_symbols
+		(symbol "pcbgolf:+12V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "pcbgolf:comma.ai_11112255_C0805"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3344,145 +3483,6 @@
 						(effects
 							(font
 								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "pcbgolf:+12V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
 							)
 						)
 					)
@@ -11051,7 +11051,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 242.57 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11084,7 +11084,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 242.57 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11678,7 +11678,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 46.99 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -11711,7 +11711,7 @@
 				)
 			)
 		)
-		(property "MPN" "RK73H1ETTP2802F"
+		(property "MPN" "RC0201FR-0728KL"
 			(at 46.99 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -11849,7 +11849,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 242.57 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -11882,7 +11882,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-071KL"
+		(property "MPN" "RC0201FR-071KL"
 			(at 242.57 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -11942,7 +11942,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 95.25 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -11975,7 +11975,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-0733KL"
+		(property "MPN" "RC0201FR-0733KL"
 			(at 95.25 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -12320,7 +12320,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 245.11 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12353,7 +12353,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 245.11 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12413,7 +12413,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0805-C"
+		(property "Footprint" "pcbgolf:C_0603_1608Metric"
 			(at 22.86 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -12446,7 +12446,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106KAYNNNE"
+		(property "MPN" "CL10A106KA8NRNC"
 			(at 22.86 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -12506,7 +12506,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 118.11 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -12539,7 +12539,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-073K3L"
+		(property "MPN" "RC0201FR-073K3L"
 			(at 118.11 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -13526,7 +13526,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 325.12 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -13559,7 +13559,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-071KL"
+		(property "MPN" "RC0201FR-071KL"
 			(at 325.12 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -13853,7 +13853,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 118.11 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -13886,7 +13886,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-073K3L"
+		(property "MPN" "RC0201FR-073K3L"
 			(at 118.11 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -13946,7 +13946,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 322.58 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13979,7 +13979,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 322.58 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14039,7 +14039,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 214.63 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -14072,7 +14072,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 214.63 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -14132,7 +14132,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 327.66 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -14165,7 +14165,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 327.66 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -14303,7 +14303,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 245.11 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -14336,7 +14336,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 245.11 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -14570,7 +14570,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 322.58 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -14603,7 +14603,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 322.58 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -14663,7 +14663,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 325.12 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -14696,7 +14696,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 325.12 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -14990,7 +14990,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 322.58 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -15023,7 +15023,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 322.58 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -15083,7 +15083,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 245.11 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -15116,7 +15116,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 245.11 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -15176,7 +15176,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 325.12 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -15209,7 +15209,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-071KL"
+		(property "MPN" "RC0201FR-071KL"
 			(at 325.12 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -15347,7 +15347,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 245.11 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -15380,7 +15380,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 245.11 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -15440,7 +15440,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 46.99 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -15473,7 +15473,7 @@
 				)
 			)
 		)
-		(property "MPN" "RK73H1ETTP2802F"
+		(property "MPN" "RC0201FR-0728KL"
 			(at 46.99 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -15947,7 +15947,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 322.58 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -15980,7 +15980,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 322.58 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -16040,7 +16040,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 240.03 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -16073,7 +16073,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 240.03 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -16703,7 +16703,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 118.11 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -16736,7 +16736,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-073K3L"
+		(property "MPN" "RC0201FR-073K3L"
 			(at 118.11 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -16796,7 +16796,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 322.58 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -16829,7 +16829,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 322.58 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -16889,7 +16889,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 240.03 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -16922,7 +16922,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 240.03 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -17060,7 +17060,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 327.66 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -17093,7 +17093,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 327.66 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -17405,7 +17405,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 242.57 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -17438,7 +17438,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 242.57 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -17498,7 +17498,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 95.25 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -17531,7 +17531,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-0733KL"
+		(property "MPN" "RC0201FR-0733KL"
 			(at 95.25 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -17591,7 +17591,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 325.12 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -17624,7 +17624,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 325.12 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -17684,7 +17684,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 297.18 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17717,7 +17717,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 297.18 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -17777,7 +17777,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 325.12 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -17810,7 +17810,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-071KL"
+		(property "MPN" "RC0201FR-071KL"
 			(at 325.12 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -17948,7 +17948,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 46.99 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -17981,7 +17981,7 @@
 				)
 			)
 		)
-		(property "MPN" "RK73H1ETTP2802F"
+		(property "MPN" "RC0201FR-0728KL"
 			(at 46.99 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18119,7 +18119,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 327.66 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -18152,7 +18152,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 327.66 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -18212,7 +18212,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 242.57 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -18245,7 +18245,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-071KL"
+		(property "MPN" "RC0201FR-071KL"
 			(at 242.57 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -18383,7 +18383,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 322.58 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -18416,7 +18416,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 322.58 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -18554,7 +18554,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 297.18 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18587,7 +18587,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 297.18 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18908,7 +18908,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 327.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18941,7 +18941,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 327.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -19001,7 +19001,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0805-C"
+		(property "Footprint" "pcbgolf:C_0603_1608Metric"
 			(at 22.86 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -19034,7 +19034,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106KAYNNNE"
+		(property "MPN" "CL10A106KA8NRNC"
 			(at 22.86 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -19172,7 +19172,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 240.03 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -19205,7 +19205,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 240.03 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -19421,7 +19421,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 242.57 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -19454,7 +19454,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 242.57 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -19670,7 +19670,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0805-C"
+		(property "Footprint" "pcbgolf:C_0603_1608Metric"
 			(at 22.86 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -19703,7 +19703,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106KAYNNNE"
+		(property "MPN" "CL10A106KA8NRNC"
 			(at 22.86 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -19763,7 +19763,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 46.99 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -19796,7 +19796,7 @@
 				)
 			)
 		)
-		(property "MPN" "RK73H1ETTP2802F"
+		(property "MPN" "RC0201FR-0728KL"
 			(at 46.99 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -19856,7 +19856,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 297.18 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -19889,7 +19889,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 297.18 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -20279,7 +20279,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0805-C"
+		(property "Footprint" "pcbgolf:C_0603_1608Metric"
 			(at 22.86 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -20312,7 +20312,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106KAYNNNE"
+		(property "MPN" "CL10A106KA8NRNC"
 			(at 22.86 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -20372,7 +20372,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 240.03 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -20405,7 +20405,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 240.03 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -20714,7 +20714,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 214.63 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -20747,7 +20747,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 214.63 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -20807,7 +20807,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 118.11 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -20840,7 +20840,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-073K3L"
+		(property "MPN" "RC0201FR-073K3L"
 			(at 118.11 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -20978,7 +20978,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 95.25 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -21011,7 +21011,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-0733KL"
+		(property "MPN" "RC0201FR-0733KL"
 			(at 95.25 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -21242,7 +21242,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 240.03 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -21275,7 +21275,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 240.03 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -21845,7 +21845,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 322.58 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -21878,7 +21878,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 322.58 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -22016,7 +22016,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 242.57 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -22049,7 +22049,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-071KL"
+		(property "MPN" "RC0201FR-071KL"
 			(at 242.57 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -22343,7 +22343,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 214.63 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -22376,7 +22376,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 214.63 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -22766,7 +22766,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 95.25 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -22799,7 +22799,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-0733KL"
+		(property "MPN" "RC0201FR-0733KL"
 			(at 95.25 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -22937,7 +22937,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 297.18 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -22970,7 +22970,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 297.18 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -23264,7 +23264,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 242.57 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -23297,7 +23297,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 242.57 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -23459,7 +23459,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 214.63 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -23492,7 +23492,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "RC0201FR-0710KL"
 			(at 214.63 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -23708,7 +23708,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 325.12 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -23741,7 +23741,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 325.12 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -23801,7 +23801,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 240.03 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -23834,7 +23834,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 240.03 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -23894,7 +23894,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 322.58 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -23927,7 +23927,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 322.58 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -23987,7 +23987,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 325.12 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -24020,7 +24020,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 325.12 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -24506,7 +24506,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 240.03 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -24539,7 +24539,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 240.03 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -24677,7 +24677,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 325.12 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -24710,7 +24710,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-071KL"
+		(property "MPN" "RC0201FR-071KL"
 			(at 325.12 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -24770,7 +24770,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 240.03 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -24803,7 +24803,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-07100RL"
+		(property "MPN" "RC0201FR-07100RL"
 			(at 240.03 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -25139,7 +25139,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "pcbgolf:0402-R"
+		(property "Footprint" "pcbgolf:R_0201_0603Metric"
 			(at 242.57 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -25172,7 +25172,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402JR-071KL"
+		(property "MPN" "RC0201FR-071KL"
 			(at 242.57 87.63 0)
 			(hide yes)
 			(show_name no)

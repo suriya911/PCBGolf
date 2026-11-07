@@ -127,8 +127,8 @@ def main(proj):
     cap_lib = value(cap, "lib_id")
     cap_props = {p[1]: p[2] for p in find(cap, "property") if p[1] not in ("Reference", "Value", "Footprint")}
     cap_fp = [p[2] for p in find(cap, "property") if p[1] == "Footprint"][0]
-    add.add(cap_lib, "C33", "10u", cap_fp, (170.18, 124.46), {"1": "+3V3", "2": "GND"}, props=cap_props)
-    add.add(cap_lib, "C34", "10u", cap_fp, (180.34, 124.46), {"1": "+3V3", "2": "GND"}, props=cap_props)
+    add.add(cap_lib, "C33", "10u", cap_fp, (170.18, 111.76), {"1": "+3V3", "2": "GND"}, props=cap_props)
+    add.add(cap_lib, "C34", "10u", cap_fp, (180.34, 111.76), {"1": "+3V3", "2": "GND"}, props=cap_props)
 
     open(path, "w", encoding="utf8").write(dumps(root) + "\n")
     free_mcu_i2c(os.path.join(proj, "pcbgolf_2.kicad_sch"))

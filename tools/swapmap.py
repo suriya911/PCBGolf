@@ -70,3 +70,8 @@ def extra_checks(nets, ctx):
         if len(found) != 1 or None in found:
             errors.append(f"hub wiring: {sorted(group)} -> {found}")
     return errors
+
+# --- passive clean-up (tools/shrink_passives.py) --------------------------
+# parallel duplicates and DNP parts are dropped; 0R links merge their two nets
+DROP |= {"C6", "C10", "R5", "R6", "R32", "R45"}
+SHORTED = {"R38", "R39", "R40", "R41", "R42", "R43"}
